@@ -9,7 +9,7 @@ import { TrackModel } from '@core/models/tracks.model';
 export class CardContainerComponent implements OnInit {
   @Input() title: string = '';
   @Input() mode: 'small' | 'big' = 'big';
-  @Input() dataTracks: Array<any> = [];
+  @Input() dataTracks: Array<TrackModel> = [];
   constructor() {}
 
   ngOnInit(): void {
