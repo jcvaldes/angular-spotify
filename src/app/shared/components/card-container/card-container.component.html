@@ -1,0 +1,15 @@
+<div class="card-list">
+  <h1 class="card-list__title">{{ title }}</h1>
+
+  <div class="card-list__player--zone">
+    <ul
+      class="player--list"
+      [ngClass]="{ 'card-small': mode === 'small', 'card-big': mode === 'big' }"
+    >
+      <li *ngFor="let track of dataTracks">
+        {{ track.name }}
+        <!-- <app-card-player [track]="track" [mode]="mode"></app-card-player> -->
+      </li>
+    </ul>
+  </div>
+</div>

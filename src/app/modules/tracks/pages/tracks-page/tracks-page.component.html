@@ -1,1 +1,14 @@
-<p>tracks-page works!</p>
+<div class="tracks-page">
+  <!-- section top (small) -->
+  <app-card-container
+    mode="small"
+    [dataTracks]="mockTrackList"
+    [title]="'¡La mejor música del mundo!'"
+  ></app-card-container>
+  <!-- section medium (big) -->
+  <app-card-container
+    mode="big"
+    [dataTracks]="mockTrackList"
+    title="Lo mejor de Electrónica"
+  ></app-card-container>
+</div>
