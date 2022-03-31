@@ -12,6 +12,7 @@ export class SidebarComponent implements OnInit {
       name: string;
       icon: string;
       router: Array<string>;
+      query?: { [key: string]: string };
     }>;
     accessLink: Array<{
       name: string;
@@ -28,7 +29,7 @@ export class SidebarComponent implements OnInit {
       {
         name: 'Home',
         icon: 'uil uil-estate',
-        router: ['/'],
+        router: ['/', 'tracks'],
       },
       {
         name: 'Buscar',
@@ -39,6 +40,7 @@ export class SidebarComponent implements OnInit {
         name: 'Tu biblioteca',
         icon: 'uil uil-chart',
         router: ['/', 'favorites'],
+        query: { hola: 'mundo' },
       },
     ];
     this.mainMenu.accessLink = [
